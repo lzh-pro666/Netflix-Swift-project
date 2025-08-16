@@ -2,7 +2,7 @@
 //  PersonViewController.swift
 //  Netflix project
 //
-//  Created by mac—lzh on 2025/4/15.
+//  Created by mac—lzh on 2025/3/15.
 //
 
 import UIKit
@@ -98,9 +98,6 @@ extension UserProfileViewController: UITableViewDelegate, UITableViewDataSource 
             
             // 添加Upcoming标签
             let detailLabel = UILabel()
-            detailLabel.text = "upcoming"
-            detailLabel.textColor = .gray
-            detailLabel.font = .systemFont(ofSize: 14)
             
             cell.contentView.addSubview(detailLabel)
             detailLabel.translatesAutoresizingMaskIntoConstraints = false
@@ -134,8 +131,6 @@ extension UserProfileViewController: UITableViewDelegate, UITableViewDataSource 
             userInfo: ["isVisible": sender.isOn]
         )
         
-        // 我们不再在这里直接操作TabBarController，而是完全依赖通知机制
-        // 这样可以避免重复更新UI和可能的冲突
     }
     
     // 创建UpcomingViewController的方法

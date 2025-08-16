@@ -1,0 +1,9 @@
+${PODS_ROOT}/Target Support Files/Pods-Netflix project/Pods-Netflix project-frameworks.sh
+${BUILT_PRODUCTS_DIR}/CachingPlayerItem/CachingPlayerItem.framework
+${BUILT_PRODUCTS_DIR}/IGListDiffKit/IGListDiffKit.framework
+${BUILT_PRODUCTS_DIR}/IGListKit/IGListKit.framework
+${BUILT_PRODUCTS_DIR}/PINCache/PINCache.framework
+${BUILT_PRODUCTS_DIR}/PINOperation/PINOperation.framework
+${BUILT_PRODUCTS_DIR}/PINRemoteImage/PINRemoteImage.framework
+${BUILT_PRODUCTS_DIR}/SDWebImage/SDWebImage.framework
+${BUILT_PRODUCTS_DIR}/Texture/AsyncDisplayKit.framework

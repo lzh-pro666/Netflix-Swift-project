@@ -2,7 +2,7 @@
 //  CollectionViewTableViewCell.swift
 //  Netflix project
 //
-//  Created by mac—lzh on 2025/4/10.
+//  Created by mac—lzh on 2025/3/10.
 //
 
 import UIKit
@@ -26,7 +26,6 @@ class CollectionViewTableViewCell: UITableViewCell {
     private var titles: [Title] = [Title]()
     //定义横向的 collectionview
     private let collectionView: UICollectionView = {
-       
         // 先定义布局
         let layout = UICollectionViewFlowLayout()
         layout.itemSize = CGSize(width: 140, height: 200)
@@ -195,14 +194,7 @@ extension CollectionViewTableViewCell: UICollectionViewDelegate, UICollectionVie
         guard let titleName = title.original_title ?? title.original_name else {
             return
         }
-//        APICaller.shared.getDownloadMovie(with: titleName) { [weak self]result in
-//            switch result{
-//            case .success(let PexelsVideo):
-//                print(PexelsVideo.id)
-//            case .failure(let error):
-//                print(error.localizedDescription)
-//            }
-//        }
+
         APICaller.shared.getMovie(with: titleName + " trailer") { [weak self]result in
             switch result{
             case .success(let videoElement):

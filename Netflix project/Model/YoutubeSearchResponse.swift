@@ -2,17 +2,10 @@
 //  YoutubuSearchResponse.swift
 //  Netflix project
 //
-//  Created by mac—lzh on 2025/4/13.
+//  Created by mac—lzh on 2025/3/13.
 //
 
 import Foundation
-
-/*
- id =             {
-     kind = "youtube#video";
-     videoId = DRv2aT9gXGA;
- };
- */
 
 struct YoutubeSearchResponse: Codable{
     let items: [VideoElement]
